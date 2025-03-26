@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokart</title>
+    <link rel="stylesheet" href="projem2.css">
+    <link rel="shortcut icon" href="Logolar/TokatLogo.png" type="image/x-icon">
+    
+</head>
+<body>
+
+    <!-- Sosyal Medya Çubuğu -->
+<div class="social-media-bar">
+    <a href="https://facebook.com" target="_blank">
+        <img src="iconlar/facebook.png" alt="Facebook">
+    </a>
+    <a href="https://instagram.com" target="_blank">
+        <img src="iconlar/instagram.png" alt="Instagram">
+    </a>
+    <a href="https://whatsapp.com" target="_blank">
+        <img src="iconlar/whatsapp.png" alt="Twitter">
+    </a>
+</div>
+
+<style>
+    .social-media-bar {
+        position: absolute;
+        top: 25%;
+        right: 10px;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .social-media-bar img {
+        width: 40px;
+        height: 40px;
+        margin: 5px 0;
+        transition: transform 0.3s;
+        border-radius: 50%;
+        border: 2px solid #444;
+    }
+
+    .social-media-bar img:hover {
+        transform: scale(1.2);
+    }
+</style>
+
+
+    <!-- Duyuru Alanı -->
+<div class="announcement">
+    <h3>Duyurular</h3>
+    <ul>
+        <li>01 Ocak: Yeni Yıl Etkinlikleri Başladı</li>
+        <li>15 Ocak: Ballıca Mağarası Günü</li>
+        <li>20 Ocak: Kış Sporları Festivali</li>
+    </ul>
+</div>
+
+<style>
+    .announcement {
+        position: absolute;
+        bottom: 20px;
+        left: 10px;
+        background-color: #ffffff;
+        padding: 15px;
+        border-radius: 10px;
+        border: 2px solid #007bff;
+        width: 200px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        font-family: Arial, sans-serif;
+    }
+
+    .announcement h3 {
+        font-size: 18px;
+        color: #007bff;
+        margin-bottom: 10px;
+    }
+
+    .announcement ul {
+        list-style: disc;
+        margin: 0;
+        padding-left: 20px;
+    }
+
+    .announcement li {
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+</style>
+
+
+    <!-- Sabit Bilgi Alanı -->
+<div class="fixed-info">
+    <h3>Tokat Hakkında</h3>
+    <p>Tokat, Türkiye'nin Karadeniz Bölgesi'nde bulunan tarihi ve doğal güzelliklerle dolu bir şehirdir.</p>
+    <p>Meşhur Yerler:</p>
+    <ul>
+        <li>Ballıca Mağarası</li>
+        <li>Tokat Kalesi</li>
+        <li>Sulusokak Çarşısı</li>
+    </ul>
+</div>
+
+<style>
+    .fixed-info {
+        position: absolute;
+        top: 70px;
+        left: 10px;
+        background-color: #f4f4f4;
+        padding: 20px;
+        border: 2px solid #007bff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        font-family: Arial, sans-serif;
+        max-width: 200px;
+    }
+
+    .fixed-info h3 {
+        color: #007bff;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .fixed-info ul {
+        list-style: disc;
+        margin-left: 20px;
+    }
+</style>
+
+
+    <!-- Canlı Destek Butonu -->
+<div class="chat-button">
+    <button onclick="startChat()">Müşteri Destek</button>
+</div>
+
+<style>
+    .chat-button {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+    }
+
+    .chat-button button {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        padding: 15px 30px;
+        border-radius: 50px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .chat-button button:hover {
+        background-color: #45a049;
+        transform: scale(1.1);
+    }
+</style>
+
+<script>
+    function startChat() {
+        alert("Müşteri temsilcimize yönlendiriliyorsunuz!");
+        window.location.href = "tel:+905521703860";
+    }
+</script>
+
+
+    <nav class="menu">
+        <ul>
+            <!-- Logo öğesi -->
+            <li class="logo"><a href="Anasayfa.html"><img src="logolar/TokatLogo.png" alt="Logo"></a></li>
+            <li class="ayar"><a href="Anasayfa.html">Ana Sayfa</a></li>
+            <li class="ayar"><a href="OtobüsümNerde.html">Otobüsüm <br>Nerde</a></li>
+            <li class="ayar"><a href="Onlineİşlemler.html">Online İşlemler</a></li>
+            <li class="ayar"><a href="Hakkımızda.html">Hakkımızda</a></li>
+            <li class="ayar"><a href="FiyatTarifeleri.html">Fiyat Tarifeleri</a></li>
+            
+            
+        </ul>
+        
+    </nav>
+    <div class="slider-container">
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <div class="slider">
+            <img src="Resimler/tokat.jpeg" alt="Fotoğraf 1">
+            <img src="Resimler/tokat2.jpeg" alt="Fotoğraf 2">
+            <img src="Resimler/tokat3.jpg" alt="Fotoğraf 3">
+            <img src="Resimler/tokat4.jpg" alt="Fotoğraf 4">
+        </div>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- İçerik örneği -->
+    <section>
+        <h1>Hoş Geldiniz</h1>
+        <p>Bu alan ana içerik için ayrılmıştır.</p>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-column">
+            <h3>Müşteri Temsilcisi</h3>
+            <ul>
+                <li><a href="#contact-number">Müşteri Temsilcisi Numarası</a></li>
+                <p>0552 170 38 60</p>
+                <li><a href="#contact-us">Bize Ulaşın</a></li>
+                <li><a href="#mobile-apps">Mobil Uygulamalarımız</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Mini Menü</h3>
+            <ul>
+                <li><a href="Hakkımızda.html">Hakkımızda</a></li>
+                <li><a href="Hizmetler.html">Hizmetler</a></li>
+                <li><a href="OtobüsümNerde.html">Otobüsüm Nerede</a></li>
+                <li><a href="Onlineİşlemler.html">Online İşlemler</a></li>
+                <li><a href="#corporate">Kurumsal</a></li>
+                <li><a href="#announcements">Duyurular</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Yardım ve Bilgi</h3>
+            <ul>
+                <li><a href="#directions">Nasıl Giderim</a></li>
+                <li><a href="#faq">Sıkça Sorulan Sorular</a></li>
+                <li><a href="#privacy-law">Kişisel Verilerin Korunması Kanunu</a></li>
+                <li><a href="#kvkk-form">KVKK Bilgi Talep Formu</a></li>
+                <li><a href="#cookie-policy">İnternet Sitesi Çerez Politikası</a></li>
+                <li><a href="#franchise-form">Bayilik Talep Formu</a></li>
+                <li><a href="#info-service">Bilgi Toplumu Hizmeti</a></li>
+                <li><a href="#consent">Açık Rıza Metni</a></li>
+                <li><a href="#privacy-policy">Gizlilik İlkelerimiz</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Bağlantı Linkleri</h3>
+            <ul>
+                <li><a href="https://www.whatsapp.com" target="_blank">WhatsApp</a></li>
+                <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="tel:+90 552 170 38 60">Telefon Numarası</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otobüsüm Nerde</title>
+    <link rel="stylesheet" href="projem2.css">
+    <link rel="shortcut icon" href="Logolar/TokatLogo.png" type="image/x-icon">
+    
+</head>
+<body id="maps">
+    
+    <nav class="menu">
+        <ul>
+            <!-- Logo öğesi -->
+            <li class="logo"><a href="Anasayfa.html"><img src="logolar/TokatLogo.png" alt="Logo"></a></li>
+            <li class="ayar"><a href="Anasayfa.html">Ana Sayfa</a></li>
+            <li class="ayar"><a href="">Otobüsüm <br>Nerde</a></li>
+            <li class="ayar"><a href="Onlineİşlemler.html">Online İşlemler</a></li>
+            <li class="ayar"><a href="Hakkımızda.html">Hakkımızda</a></li>
+            <li class="ayar"><a href="FiyatTarifeleri.html">Fiyat Tarifeleri</a></li>
+            
+            <li class="social">
+                <a href="https://www.whatsapp.com" target="_blank">
+                    <img src="iconlar/whatsapp.png" alt="WhatsApp">
+                </a>
+            </li>
+            <li class="social">
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="iconlar/instagram.png" alt="Instagram">
+                </a>
+            </li>
+            <li class="social">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="iconlar/facebook.png" alt="Facebook">
+                </a>
+            </li>
+        </ul>        
+    </nav>
+    <h1>OpenLayers ile Harita</h1>
+  
+    <div class="container">
+      <!-- Sol tarafta otobüs sorgulama alanı -->
+      <div class="sidebar">
+        <h2>Otobüs Sorgulama</h2>
+        <form id="busForm">
+          <label for="busName">Otobüs İsmi:</label>
+          <input type="text" id="busName" placeholder="Otobüs adı girin" autocomplete="off">
+          <ul id="busDropdown" class="dropdown-menu"></ul>
+          <button class="sorgu">Sorgula</button>
+        </form>
+        <h2>Otobüs Saatleri</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>İlk Duraktan Kalkış</th>
+          <th>Hafta İçi Saatleri</th>
+          <th>Cumartesi Saatleri</th>
+          <th>Pazar Saatleri</th>
+        </tr>
+      </thead>
+      <tbody id="busTableBody">
+        <tr>
+          <td colspan="4">Veri bekleniyor...</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table>
+        <thead>
+          <tr>
+            <th>Son duraktan kalkış</th>
+            <th>Hafta İçi Saatleri</th>
+            <th>Cumartesi Saatleri</th>
+            <th>Pazar Saatleri</th>
+          </tr>
+        </thead>
+        <tbody id="busTableBody2">
+          <tr>
+            <td colspan="4">Veri bekleniyor...</td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+  
+      <!-- Sağ tarafta harita alanı -->
+      <div id="map"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/ol@v10.2.1/dist/ol.js"></script>
+    <script src="script.js"></script>
+
+    <footer class="footer">
+      <div class="footer-column">
+          <h3>Müşteri Temsilcisi</h3>
+          <ul>
+              <li><a href="#contact-number">Müşteri Temsilcisi Numarası</a></li>
+              <p>0552 170 38 60</p>
+              <li><a href="#contact-us">Bize Ulaşın</a></li>
+              <li><a href="#mobile-apps">Mobil Uygulamalarımız</a></li>
+          </ul>
+      </div>
+
+      <div class="footer-column">
+          <h3>Mini Menü</h3>
+          <ul>
+              <li><a href="Hakkımızda.html">Hakkımızda</a></li>
+              <li><a href="Hizmetler.html">Hizmetler</a></li>
+              <li><a href="OtobüsümNerde.html">Otobüsüm Nerede</a></li>
+              <li><a href="Onlineİşlemler.html">Online İşlemler</a></li>
+              <li><a href="#corporate">Kurumsal</a></li>
+              <li><a href="#announcements">Duyurular</a></li>
+          </ul>
+      </div>
+
+      <div class="footer-column">
+          <h3>Yardım ve Bilgi</h3>
+          <ul>
+              <li><a href="#directions">Nasıl Giderim</a></li>
+              <li><a href="#faq">Sıkça Sorulan Sorular</a></li>
+              <li><a href="#privacy-law">Kişisel Verilerin Korunması Kanunu</a></li>
+              <li><a href="#kvkk-form">KVKK Bilgi Talep Formu</a></li>
+              <li><a href="#cookie-policy">İnternet Sitesi Çerez Politikası</a></li>
+              <li><a href="#franchise-form">Bayilik Talep Formu</a></li>
+              <li><a href="#info-service">Bilgi Toplumu Hizmeti</a></li>
+              <li><a href="#consent">Açık Rıza Metni</a></li>
+              <li><a href="#privacy-policy">Gizlilik İlkelerimiz</a></li>
+          </ul>
+      </div>
+
+      <div class="footer-column">
+          <h3>Bağlantı Linkleri</h3>
+          <ul>
+              <li><a href="https://www.whatsapp.com" target="_blank">WhatsApp</a></li>
+              <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+              <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+              <li><a href="tel:+90 552 170 38 60">Telefon Numarası</a></li>
+          </ul>
+      </div>
+  </footer>
+    
+</body>
+</html>

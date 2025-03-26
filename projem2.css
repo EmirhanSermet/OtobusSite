@@ -1,0 +1,352 @@
+/* Temel sayfa stili */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1; /* İçerik alanı esneklik kazandırır */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Alt Menü (Footer) Stili */
+.footer {
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.footer-column {
+    flex: 1 1 200px; /* Sütun genişliği */
+    min-width: 150px;
+}
+
+.footer-column h3 {
+    font-size: 16px;
+    color: #f4f4f4;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #2acd79;
+}
+
+/* Responsive Ayarlar */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+    }
+}
+
+
+/* Menü stili */
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #007bff;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Menü listesi */
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Logo öğesi */
+.menu ul li.logo {
+    margin-right: auto;
+    padding: 10px;
+    
+}
+.menu ul li.ayar {
+    
+    margin-right: auto;
+    
+}
+
+.menu ul li.logo img {
+    height: 40px; /* Logonun boyutunu ayarlayabilirsin */
+    vertical-align: middle;
+}
+
+/* Menü öğeleri */
+.menu ul li {
+    padding: 10px 15px;
+}
+
+.menu ul li a {
+    color: white;
+    padding: 5px 15px;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover efekti */
+.menu ul li a:hover {
+    background-color: #2acd79;
+    color: #fff;
+}
+
+/* İçerik alanı */
+section {
+    text-align: center;
+}
+.menu ul li.social {
+    padding: 0 1px; /* İkonlar için daha dar bir padding */
+}
+
+.menu ul li.social a img {
+    width: 14px;
+    height: 14px;
+    transition: opacity 0.3s ease;
+}
+
+.menu ul li.social a img:hover {
+    opacity: 0.7; /* Hover durumunda opaklık azaltma */
+}
+
+/* İkonları en sağa hizalamak */
+.menu ul li.social{
+    justify-content: flex-end;
+}
+
+
+/* Slider stilleri */
+.slider-container {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+  padding-top: 70px;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 1s ease;
+}
+
+.slider img {
+  width: 100%;
+  display: block;
+  height: auto;
+  object-fit: cover;
+  
+}
+
+.next , .prev{
+  position: absolute;
+  top: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.next , .prev :hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.binası  img {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.hakkımız {
+    width: 100%;
+    height: 150px;
+    padding-bottom: 40px;
+}
+
+.hakkımız div.misyon {
+    width: 49%;
+    border: #2acd79;
+    float: left;
+
+    
+}
+
+.hakkımız div.vizyon {
+    float: right;
+    width: 50%;
+    border: #2acd79;
+    
+    
+}
+
+#mb {
+    text-align: center;
+}
+
+#vb {
+    text-align: center;
+}
+
+#hb {
+    text-align: center;
+}
+
+/* ------------------------------------------------------------------------*/
+
+
+
+body #maps {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* Sol taraftaki otobüs sorgulama alanı */
+  .sidebar {
+    width: 30%;
+    height: 600px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-right: 1px solid #ccc;
+  }
+  
+  .sidebar h2 {
+    margin-top: 0;
+  }
+  
+  #busForm {
+    margin-bottom: 20px;
+  }
+  
+  #busForm input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  #busForm button{
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #busForm button:hover {
+    background-color: #0056b3;
+  }
+  
+  #results h3 {
+    margin-top: 0;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  th {
+    background-color: #9b9b9b;
+  }
+  
+  /* Sağ taraftaki harita alanı */
+  #map {
+    width: 70%;
+    height: 600px;
+  }
+
+  /**--------------------------------------------*/
+
+  .form-container {
+    margin-bottom: 20px;
+  }
+  
+  #busName {
+    width: 200px;
+    padding: 5px;
+  }
+  
+  .dropdown-menu {
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    list-style: none;
+    padding: 0;
+    max-height: 150px;
+    overflow-y: auto;
+    display: none;
+    position: absolute;
+    background-color: white;
+    z-index: 1000;
+    width: 200px;
+  }
+  
+  .dropdown-menu li {
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  
+  .dropdown-menu li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  
